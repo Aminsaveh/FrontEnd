@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>html-css-hw</title>
+</head>
+
+<body >
+
+    <nav>
+      <div class="navbar">
+        <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <div class="navbar-hamburger-wrapper">
+              <div class="hamburger"></div>
+            </div>
+          </label>
+      <div class="logo"></div>
+      <div class="navbar-items-wrapper">
+        <div class="navbar-items"> 
+            <ul>
+            <li><a class="not-active" href="#">Home</a></li>
+            <li><a class="not-active" href="#" style=" text-decoration:  underline; text-decoration-color: #f1b717; text-underline-offset: 10px; white-space:pre;"> Contact </a></li>
+            <li><a class="not-active" href="#">Faculties</a></li>
+            <li><a class="active" href="#">Sign in</a></li>
+          </ul></div>
+      </div>
+    </nav>
+    <div  class="flex-container">
+      <div class="flex-item-left">
+        <h1 class="left-header">Contact Us</h1>
+        <div class="contact-item">
+          <div class="image-wrapper">
+              <img src="./assets/location-logo.png" />
+          </div>
+          <p>Shahid Beheshti Unitversity, Shahid Shahriari Square, Evin, Tehran, Iran</p>
+        </div>
+        <div class="contact-item">
+          <div class="image-wrapper">
+              <img src="./assets/email-logo.png" />
+          </div>
+          <p>int.education@sbu.ac.ir</p>
+        </div>
+
+        <div class="contact-item">
+          <div class="image-wrapper">
+              <img src="./assets/phone-logo.png" />
+          </div>
+          <p>(+98 21) 29902761 <br />(+98 21) 22431585</p>
+        </div>
+      </div>
+      <div class="flex-item-right">
+        <div class="send-wrapper">
+          <img src="./assets/send.png"/>
+        </div>
+      <form>
+          <div>
+              <input type="text" placeholder="Name" class="form-field" />
+          </div>
+          <div>
+              <input type="tel" placeholder="Phone Number" class="form-field" />
+          </div>
+          <div>
+              <textarea placeholder="Some Text" class="form-field"></textarea>
+          </div>
+          <button>Submit</button>
+      </form>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>

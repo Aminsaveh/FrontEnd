@@ -1,0 +1,543 @@
+* {
+  font-family: "poppins";
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/*                             Header Section                             */
+.header{
+  background-color: black;
+  color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 75px;
+
+}
+
+.header-light {
+background-color: white !important;
+color: black  !important;
+box-shadow: 0px 1px 5px rgb(165, 165, 165) !important;
+}
+
+.header > button{
+background-color: transparent;
+border-radius: 100px;
+padding: 10px 20px;
+cursor: pointer;
+font-weight: 500;
+color: orange;
+border: 1px solid black;
+}
+
+.header > button:hover{
+transition: 500ms;
+color : orange;
+background-color: white;
+}
+
+
+.header > div {
+font-weight: bold;
+}
+
+.header-light > button{
+color: black !important;
+border: 1px solid white !important;
+}
+
+.header-light > button:hover{
+background-color: black !important;
+color: orange !important;
+}
+
+
+
+
+
+
+
+/*                           HomePage                          */
+
+
+
+/* BackGroundImage */
+.home {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+}
+
+
+/* Change Theme Button */
+.home .change-theme-part{
+  position: relative;
+  right:3%;
+  top: 3%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* Change Theme Button  */
+.home .change-theme {
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-weight: 1000;
+  cursor: pointer;
+  transition: 500ms;
+  color: white;
+  border-radius: 100px;
+  padding: 10px 20px;
+}
+
+
+/* Change Theme Button  Light Theme   */
+.home .change-theme-light {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: black !important;
+}
+
+/* Hover On Change Theme Button    */
+.home .change-theme:hover{
+  background-color: white;
+  color: black;
+}
+/* Hover On Change Theme Button Light Theme  */
+.home .change-theme-light:hover{
+  background-color: black !important;
+  color: white !important;
+}
+
+
+/* Home Page Items Decorations  */
+.home-items{
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+/* Home Page Title  */
+.home-title {
+  width:  25%;
+  color: white;
+  font-size: 60px;
+  font-weight: 1000;
+}
+
+.home-title-light {
+  color: black !important;
+}
+.home-title span{
+  font-weight: 1000;
+  color: orange;
+}
+
+.home-title-light span{
+  color: orange !important;
+}
+
+
+/* Home Page SubTitle  */
+.home-sub{
+  color: white;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.home-sub-light{
+  color: black !important;
+}
+
+.home-light-title {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+
+.home-dark {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+
+}
+
+
+/* Recent Search Wrapper  */
+.recent-search-list{
+display: flex;
+align-items: center;
+justify-content: end;
+gap: 10px;
+width: 95%;
+}
+/* Recent Search items  */
+.recent-search-list-item{
+border-radius: 10px;
+display: flex;
+width: 120px;
+height: 50px;
+justify-content: center;
+gap: 10px;
+border: 2px solid orange;
+padding: 10px;
+}
+
+.recent-search-list-item:hover{
+  transition: 500ms;
+  background-color: orange;
+}
+
+.recent-search-list-item-light{
+  border: 2px solid orange !important;
+}
+
+.recent-search-list-item .values{
+  display: flex;
+
+  flex-direction: column;
+  gap: 5px;
+}
+.recent-search-list-item .title{
+  text-transform: uppercase;
+  color: orange;
+  font-size: 12px;
+}
+.recent-search-list-item:hover .title{
+  color: white;
+}
+
+
+.recent-search-list-item-light .title{
+  
+  color: rgb(199, 130, 0) !important;
+}
+.recent-search-list-item-light:hover .title{
+  color: black !important;
+}
+
+.recent-search-list-item .value{
+  color: white;
+}
+
+.recent-search-list-item-light .value{
+  color: black !important;
+}
+
+.recent-search-list-item .image{
+  width: 30px;
+  height: 30px;
+}
+
+
+/* Search More Button  */
+.search {
+  width: max-content;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 100px;
+  margin-top: 20px;
+  background-color: orange;
+  color: white;
+  font-size: 15px;
+  padding: 10px 50px;
+}
+
+.search-light {
+  color: black !important;
+}
+
+/* Hover On Search More Button  */
+.search:hover{
+  transition: 500ms;
+  background-color: white;
+  color : orange;
+}
+
+.search-light:hover{
+  transition: 500ms;
+  background-color: black !important;
+  color : orange !important;
+}
+
+
+
+/*                                       Search Page               */
+
+
+
+
+/* Banner Section In Search Page  */
+
+.banner{
+  min-height: 400px;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+
+.banner .title{
+  text-align: center;
+  font-size: 48px;
+  font-weight: 1000;
+  color: white;
+  padding-top: 30px;
+}
+
+
+.banner .sub{
+  text-align: center;
+  font-size: 10px;
+  font-weight: lighter;
+  color: white;
+
+}
+
+
+/* Search List In Search Page  */
+
+.search-list{
+  height: 60vh ;
+  background-color: black;
+}
+
+.search-list-light{
+  background-color: white !important;
+}
+
+.search-list .title{
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+.search-list-light .title{
+  color: black !important;
+}
+
+
+.search-list  form{
+    width: 70%;
+    margin: auto;  
+
+}
+
+.search-list form .form-input{
+  padding: 10px;
+  background-color: transparent;
+  color: #aaa6ac;
+  width: calc(100% - 20px);
+  margin-top: 20px;
+  border-radius: 2px;
+  border: 2px solid #27282c;
+
+}
+
+.search-list-light .form-input{
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid black !important;
+}
+
+
+.search-list-light .form-input::placeholder{
+  color: black !important;
+}
+
+
+.search-list-light .list{
+  box-shadow: none !important;
+  color: black !important;
+}
+
+
+.search-list-light .list :hover .hovered{
+  background-color: rgba(243, 164, 4, 0.368) !important;
+}
+
+.search-list-light .list-content {
+  background-color: white !important;
+  color: black !important;
+}
+
+
+.search-list .list{
+  margin-bottom: 100px;
+  display: block;
+  text-decoration: none !important;
+  color: white;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70% !important;
+  border-collapse: collapse !important;
+  box-shadow: 0px 0px 10px rgb(13, 13, 13) !important;
+}
+
+
+.search-list .list .list-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 16px);
+  padding: 10px;
+
+}
+
+.search-list .list .list-row > div {
+  gap: 10px;
+}
+
+.search-list .list .list-row .coin {
+  display: flex;
+}
+
+.search-list .list .list-row .names .symbol {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.search-list .list .list-header {
+  background-color: orange;
+  margin-top: 10px;
+  border-radius: 10px 10px 0px 0px;
+  font-weight: 600;
+
+}
+.search-list .list :hover .hovered{
+  background-color: rgba(243, 246, 169, 0.368);
+}
+
+.search-list .list .list-content{
+  font-size: 14px;
+  background-color: black;
+  border-bottom: 1px solid #9e9e9e;
+  color: white;
+
+}
+
+.search-list .list .list-single-row {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.search-list .list .coin .image{
+  width: 40px;
+  height: 40px;
+}
+
+.search-list .list .negative {
+  color: red;
+}
+
+.search-list .list .positive {
+  color: green;
+}
+
+
+
+
+
+/*                                    Details Page                           */
+
+.details{
+  height: 150vh !important;
+  background-color: black !important;
+
+}
+
+.details-light{
+  background-color: white !important;
+}
+
+.details-content{
+  margin-top: 10px;
+}
+
+.details-content div{
+  text-align: center;
+}
+
+.details-content div > img{
+  width: 150px;
+  height: 150px;
+}
+
+.details-content .title{
+  text-align: center;
+  color: white;
+  font-weight: 1000;
+  font-size: 50px;
+  margin-top: 20px;
+  
+}
+
+
+.details-content .description{
+  color: white;
+  text-align: justify;
+  margin: 30px auto;
+  width: 80%;
+
+}
+
+
+.details-content  .pairs {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+
+}
+.details-content  .pairs .key{
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+.details-content .pairs .value{
+  color: white;
+  font-size: 20px;
+}
+
+.details-content-light .title{
+  color: black !important;
+}
+
+.details-content-light .description{
+  color: black !important;
+}
+.details-content-light .pairs{
+  color: black !important;
+}
+
+.details-content-light .pairs .key{
+  color: black !important;
+}
+
+.details-content-light .pairs .value{
+  color: black !important;
+}

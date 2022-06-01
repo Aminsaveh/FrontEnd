@@ -1,0 +1,12 @@
+.product-page {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+}
+
+.product-title {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 30px;
+}

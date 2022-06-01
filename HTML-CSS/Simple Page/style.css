@@ -1,0 +1,361 @@
+:root {
+  --white: white;
+  --blue: rgb(67, 140, 223);
+  --black: rgb(0, 0, 0);
+  --yellow: #f1b717;
+  --grey: rgb(63, 63, 63);
+  --orange: #ff8800;
+}
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-image: url("assets/pic.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+  display: grid;
+}
+
+.navbar { 
+    border-radius: 20px;
+    background: #ffffff;
+    height: 80px;
+    margin: 0 auto;
+    margin-top : 5%;
+    margin-bottom : 2%;
+    width: 95%;
+}
+
+.logo{
+  background-image: url("assets/sbu-logo.png");
+  width: 70px;
+  height: 70px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-left: 20px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.hamburger{
+  position: absolute;
+  background-image: url("assets/Hamburger_icon.svg.png");
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  top: 50%;
+  filter: invert(75%) sepia(69%) saturate(685%) hue-rotate(346deg) brightness(96%) contrast(96%);
+  margin-right: 5%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+
+.navbar-items-wrapper {
+  display: flex;
+  justify-content: center;
+}
+a.active{
+  color : rgb(255, 255, 255);
+  background: #000000;
+}
+
+a:link { text-decoration: none; }
+
+
+.checkbtn{
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+.navbar-items {
+  margin: 0 auto;
+}
+
+.navbar img {
+  background-image: url("assets/pic.jpg");
+  
+}
+
+.navbar-hamburger-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar{
+  position: relative;
+  box-shadow: 0 0 10px 5px rgb(65, 64, 64);
+}
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 25px;
+}
+
+.flex-item-left {
+  min-width: 400px;
+  max-width: 400px;
+  height: 400px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  padding-bottom: 100px;
+  flex-direction: 1 1 400px;
+  margin-bottom: 25px;
+}
+
+
+.flex-item-right {
+  min-width: 400px;
+  max-width: 400px;
+  height: 400px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  padding-bottom: 100px;
+  flex-direction: 1 1 400px;
+  margin-bottom: 25px;
+}
+
+.left-header{
+  color: #000000;
+  font-weight: 800;
+  margin-top: 15%;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.contact-item{
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+  margin: 10px 0px;
+  transition: 500ms;
+  font-size: 10px;
+  font-weight: 200 ;
+  margin-bottom: 30px;
+}
+.contact-item:hover {
+  transform: scale(1.05);
+}
+ .image-wrapper {
+  width: 50px;
+  margin-right: 10%;
+  background-color: black;
+  border-radius: 100%;
+
+}
+ .image-wrapper > img {
+   min-width: 50px;
+   max-width: 50px;
+  border-radius: 50%;
+  padding: 20%;
+  justify-content: center;
+  filter: brightness(0) invert(1);
+}
+
+p{
+  font-weight: 600;
+  margin-top: 5px;
+  margin-right: 15%;
+  color: #000000;
+  font-size: 15px;
+}
+
+.send-wrapper {
+  margin-right: 20px;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.flex-item-right img {
+  width: 50px;
+  height: 50px;
+}
+
+.flex-item-right form {
+  margin: 0 30px;
+  width: 100%;
+}
+
+.flex-item-right form .form-field {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 200px;
+  transition: 500ms;
+}
+.flex-item-right form textarea {
+  height: 150px;
+}
+.flex-item-right form .form-field::placeholder {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+.flex-item-right form .form-field:focus {
+  width: calc(90% - 30px);
+}
+.flex-item-right form button {
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #f1b717;
+  border-radius: 50px;
+  text-align: center;
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+  transition: 500ms;
+}
+.flex-item-right form button:hover {
+  background-color: var(--blue);
+}
+
+@media (max-width: 10000px){
+  .logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+
+  a.not-active:hover{
+    color: rgb(77, 76, 76);
+    transition: .2s;
+  }
+
+  
+  a.active:hover{
+    background-color: rgb(77, 76, 76);
+    transition: .2s;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 800px){
+  .checkbtn{
+    display: inline-block;
+  }
+
+  .navbar-items-wrapper{
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-out;
+  }
+  ul{
+    justify-content: center;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    text-align: center;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a.active{
+    color : white;
+    background: #000000;
+  }
+  a.not-active:hover{
+    color: rgb(77, 76, 76);
+  }
+
+  a.active:hover{
+    background-color: rgb(77, 76, 76);
+
+  }
+
+  .flex-container  {
+    flex-direction: column;
+    margin-top : 5%;
+  }
+  
+    .navbar-items{
+     margin: 0 35%;
+  } 
+  #check:checked ~ .navbar-items-wrapper{
+    display:  block;
+    border-radius: 20px;
+    height: auto;
+    background-color: white;
+    width: 100%;
+    margin-top: 100px;
+    visibility: visible;
+    opacity: 1;
+    justify-content: center;
+    float: left;
+    text-align: center;
+
+  }
+
+
+  .flex-item-left{
+    min-width: 80%;
+    max-width: 80%;
+  }
+  .flex-item-right{
+    min-width: 80%;
+    max-width: 80%;
+  }
+}
+
+
+

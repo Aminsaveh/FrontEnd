@@ -1,0 +1,33 @@
+body {
+  background-color: #fafafa;
+}
+
+.modal-header {
+  border: none !important;
+}
+
+.modal-footer {
+  border: none !important;
+}
+
+.icon {
+  width: 23px;
+  height: 23px;
+}
+
+.icon-remove {
+  width: 30px;
+  height: 30px;
+}
+
+.counter-badge {
+  position: absolute;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  padding: 5px 10px;
+  line-height: 18px;
+  top: -8px;
+  right: -8px;
+  font-size: 16px;
+}

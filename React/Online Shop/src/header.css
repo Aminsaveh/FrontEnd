@@ -1,0 +1,42 @@
+.header-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  text-align: white;
+  padding: 20px 0px;
+  background-color: black;
+}
+
+.button-cart {
+  border: none;
+  outline: none;
+  background-color: #0b5ed7;
+  position: relative;
+  text-decoration: none;
+  padding: 10px 50px;
+  display: inline-block;
+  color: white;
+  border-radius: 7px;
+  transition: 500ms;
+}
+
+.button-cart:hover {
+  color: black;
+  background-color: lightblue;
+}
+
+.button-cart-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-link {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+}
